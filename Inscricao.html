@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Stoke:wght@300;400&display=swap" rel="stylesheet">
+    <title>Halteres seus Hábitos</title>
+</head>
+<body>
+    <header>
+            <img class="imgLogo" src="./Imagens/HalteresSeusHabitosTopo.png" alt="Topo da Página">
+        <address class="ender">
+            Estrada do Puxa Ferro, 12 <br>
+            Tel.: (21) 91234-56789 <br>
+            <a href="mailto:contato@halterhabit.com.br" target="_blank">contato@halterhabit.com.br</a>
+        </address>
+    </header>
+    <main>
+        <nav>
+            <ul>
+                <li><a href="./HalteresSeusHabitos.html" target="_blank">Apresentação</a></li>
+                <li><a href="./Planos.html" target="_blank">Planos</a></li>
+                <li><a href="./Equipamentos.html" target="_blank">Equipamentos</a></li>
+                <li><a href="./Inscricao.html" target="_blank">Inscrição</a></li>
+            </ul>
+        </nav>
+        <section>
+            <h1 class="tituloForm"> Inscrição</h1>
+                <form class="formul">
+                    <fieldset class="fsPessoal">
+
+                        <legend>Dados Pessoais</legend>
+                            <div class="linhaNome">
+                                <label class="labelPes" for="nome">Nome:</label>
+                                <input type="text" class="inpNome" name="nome" required>
+                            </div>
+                            <div class="colEsqPes">
+                                <label for="telefone" class="labelPes"> Telefone:</label>
+                                <input type="tel" class="inpTelef" name="telefone"> <br><br>
+                                <label for="celular" class="labelPes"> Celular:</label>
+                                <input type="tel" class="inpTelef" name="celular"> <br><br>
+                                <label for="idade" class="labelPes"> Idade:</label>
+                                <input type="number" class="numDD" name="idade" min="0" max="99" value="18" required>
+                            </div>
+
+                        <fieldset class="fsGenero">
+                            <legend>Gênero</legend>
+                            
+                            <input type="radio" name="Genero" value="F" checked>
+                            <label for="F">Feminino</label> <br>
+                           
+                            <input type="radio" name="Genero" value="M">
+                            <label for="M">Masculino</label><br>
+                           
+                            <input type="radio" name="Genero" value="O">
+                            <label for="O">Outro</label>
+                        </fieldset>
+
+                    </fieldset>
+
+                    <fieldset class="fsPessoal">
+
+                        <legend>Matrícula</legend>
+                            <div class="colEsqPes">
+                                <label for="matriculado">Matriculado?</label>
+                                <input type="checkbox" name="matriculado"> <br><br>
+                                <label for="Atividade">Atividade:</label>
+                                <select name="Atividade">
+                                    <option value="">-----</option>
+                                    <option value="academia">Academia</option>
+                                    <option value="natacao">Natação</option>
+                                    <option value="combo">Combo</option>
+                                </select>
+                            </div>
+                            <div class="colDirMar">
+                                <label for="numero">Número:</label>
+                                <input type="text" name="numero" class="numQD"> <br><br>
+                                <label for="Plano">Plano:</label>
+                                <select name="plano">
+                                    <option value="">-----</option>
+                                    <option value="anual">Anual</option>
+                                    <option value="semestral">Semestral</option>
+                                    <option value="mensal">Mensal</option>
+                                </select>
+                            </div>
+                            <fieldset class="fsCartao">
+                                <legend>Cartão</legend>
+                                <label class="colLabCrd">Bandeira: 
+                                    <input type="radio" name="bandeira">
+                                    <label for="visa">Visa</label>
+                                    <input type="radio" name="bandeira">
+                                    <label for="mcard">Master</label>
+                                    <input type="radio" name="bandeira">
+                                    <label for="elo">Elo</label>
+                                </label><br>
+                                <label class="colLabCrd" for="val">Validade:
+                                    <input type="number" name="mesVal" min="1" max="12" class="numDD" value="8">
+                                    /
+                                    <input type="number" name="anoVal" value="2024" min="2024" max="2040" class="numQD">
+                                </label> <br>
+                                <label class="colLabCrd" for="numCar">Número:
+                                    <input type=text name="numCar" class="inpNCC">
+                                </label>
+                            </fieldset>
+                            <br>
+                            <div class="colValTot">
+                               <button>Matrícula + Plano</button>
+                            </div>
+                            <input class="inpVal" type="text" readonly>
+                            <br><br>
+                    <div class="entDireita">
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Limpar">
+                    </div>
+                    </form>
+        </section>
+    </main>
+</body>
+</html>
